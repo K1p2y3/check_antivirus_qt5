@@ -17,7 +17,6 @@ class Check_Antivirus:  # 检测应用
     def __init__(self):
         with open('./antivirus.json', 'r') as f:
             data = json.loads(f.read())
-            print(data)
             self.antivirus = data
 
     def process_info(self):
